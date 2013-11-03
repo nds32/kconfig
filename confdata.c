@@ -64,9 +64,9 @@ static void conf_message(const char *fmt, ...)
 
 const char *conf_get_configname(void)
 {
-	char *name = getenv("OLIBC_CONFIG");
+	char *name = getenv("NDS32_TOOLCHAIN_CONFIG");
 
-	return name ? name : ".config";
+	return name ? name : "config.mak";
 }
 
 const char *conf_get_autoconfig_name(void)
